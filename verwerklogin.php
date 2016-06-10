@@ -1,6 +1,5 @@
 <?php
-include("connection.php");
-session_start();
+include('menu.php');
 $email = $_REQUEST['email'];
 $password = $_REQUEST['password'];
 
@@ -16,7 +15,7 @@ if($count == 1)
 	$_SESSION['ingelogd'] = 1;
 	
 }else{
-	echo "De door uw ingevoerde gegevens bestaan niet in onze database, neem contact met onze administrator of ga lekker weekend vieren.";
+	echo "De door uw ingevoerde gegevens bestaan niet, neem contact met onze administrator of ga lekker weekend vieren.";
 	
 }
 

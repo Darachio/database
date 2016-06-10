@@ -1,8 +1,14 @@
 <?php
-session_start();
+include('menu.php');
 
 if($_SESSION['ingelogd']){
-	echo "Dit is geheim!!";
+	$query = "SELECT * FROM users";
+	$result = $link->query($query);
+
+	while($row = $result->fetch_array()){
+		echo $row[0] . "<BR>";
+		echo $row[1] . "<BR>";
+	}
 }else{
 	
 	echo "Je bent niet ingelogd.";

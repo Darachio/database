@@ -1,0 +1,17 @@
+<?php
+include('menu.php');
+?>
+<HTML>
+	<HEAD>
+		<TITLE>Aanmelden
+		</TITLE>
+	</HEAD>
+	<BODY>
+	<H1>Aanmelden</H1>
+		<FORM method="post" action="verwerkaanmeld.php">
+			Email: <INPUT type="text" name="email"/><br>
+			Wachtwoord: <INPUT type="password" name="password"/><br>
+			<INPUT type="submit" value="Aanmelden"/>
+		</FORM>
+	</BODY>
+</HTML>
